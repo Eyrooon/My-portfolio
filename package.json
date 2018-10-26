@@ -1,0 +1,25 @@
+{
+  "name": "ivan-esguerra-portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eyrooon/My-portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Ivan Esguerra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eyrooon/My-portfolio/issues"
+  },
+  "homepage": "https://github.com/Eyrooon/My-portfolio",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
