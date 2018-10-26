@@ -49,11 +49,11 @@ body {
 }
 
 .first-page__body {
-    margin: 0 9rem;
-    padding: 15em;
+    margin: 0 5rem;
+    padding: 6em 15em;
     color:white;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
     line-height: 2em;
 }
 
@@ -101,14 +101,16 @@ body {
 @media (max-width:480px), only screen and (max-device-width:480px), only screen and (device-width:768px) {
     #first-page {
         background:linear-gradient(rgba(5,5,5,.7),rgba(0,0,0, 0.8)),  url('../image/dark-640.jpeg') fixed center center;
+        height: 800px;
     }
     .first-page__body {
-        margin:0;
-        padding: 0 0em;
+        margin: 0;
+        padding: 4em 0;
     }
     .img {
         width: 200px;
         height: 200px;
+        margin-left: 3em;
     }
    /* styles for mobile browsers smaller than 480px; (iPhone) */
 }
