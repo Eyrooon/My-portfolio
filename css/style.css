@@ -36,7 +36,7 @@ body {
 
 .second-page__image {
     position:absolute;
-    top: 40%;
+    top: 45%;
     left:calc(100vw - 58vw);
     z-index: 2;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .first-page__description {
-    margin: 3em 580px;
+    margin: 3em 560px;
     text-align: justify!important;
 }
 
