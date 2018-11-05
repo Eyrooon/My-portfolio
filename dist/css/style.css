@@ -14,9 +14,14 @@ body {
 }
 
 
-.img {
+.img-ivan {
     width: 200px;
     height: 200px;
+}
+
+.img-devices {
+    width:450px;
+    height:280px;
 }
 
 .first-page {
@@ -34,13 +39,6 @@ body {
     display: inline-block;
 }
 
-.second-page__image {
-    position:absolute;
-    top: 45%;
-    left:calc(100vw - 58vw);
-    z-index: 2;
-}
-
 .first-page__subtitle {
     font-size: 2rem;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -53,7 +51,47 @@ body {
 
 .second-page {
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    height: 80vh;
+    height: 90vh;
+}
+
+.second-page h1 {
+    font-size:2rem;
+    font-family: Rockwell;
+    display: inline-block;
+    margin-top: 4.5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.second-page__image--ivan {
+    position:absolute;
+    top: 45%;
+    left:calc(100vw - 58vw);
+    z-index: 2;
+}
+
+.second-page__image--devices {
+    position: absolute;
+    bottom: -40%;
+    right:0;
+}
+
+.work-description {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:1em;
+    margin: auto 1em;
+}
+
+.work-description--paragraph {
+    border: 1px solid  black;
+    border-top: none;
+    padding: .5em;
+}
+
+.work-description--header {
+    border: 1px solid black;
+    padding: .5em;
 }
 
 @media only screen and (max-width:1400px) {
@@ -68,6 +106,52 @@ body {
     }
 }
 
+@media only screen and (max-width:1000px) {
+    .img-devices {
+        width:350px;
+        height: 350px;;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .second-page {
+        height: 1000px;
+    }
+
+    .img-devices {
+        width:300px;
+        height: 300px;;
+    }
+
+    .second-page__image--devices {
+        bottom: -80%;
+        right: 20%;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    .second-page__image--devices {
+        bottom: -93%;
+        left: 3%;
+    }
+
+    .second-page__image--ivan {
+        top: 60%;
+        right:10%;
+    }
+
+    .img-ivan {
+        width: 130px;
+        height: 130px;
+    }
+
+    .img-devices {
+        width:250px;
+        height: 200px;;
+    }
+}
+
 @media only screen and (max-width:700px) {
     .first-page h1 {
         font-size: 2rem;
@@ -75,7 +159,7 @@ body {
     .first-page__description {
         margin: 3em 50px;
     }
-    .second-page__image {
+    .second-page__image--ivan {
         left:calc(100vw - 68vw);
     }
 }
@@ -85,7 +169,8 @@ body {
         height: 500px;
     }
 
-    .second-page__image {
+    .second-page__image--ivan {
         top: 65%;
     }
+    
 }
