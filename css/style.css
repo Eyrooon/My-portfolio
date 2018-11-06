@@ -35,6 +35,54 @@ footer p > a {
     color: whitesmoke;
 }
 
+a.btn-link {
+    text-decoration: none;
+    padding:.5em;
+    background: lightsalmon;
+    color:black;
+    border-radius: 120px;
+    font-family: Rockwell, 'Times New Roman';
+    transition: border-radius 150ms ease-in;
+}
+
+
+a.btn-link:hover {
+    border-radius: 0;
+}
+
+h1.text__center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.mb--1 {
+    margin-bottom:1em;
+}
+
+
+.place-center {
+    display: flex;
+    flex-direction: column;
+}
+
+#arrow-up {
+    opacity: 0;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding:1em;
+    border-radius: 145px;
+    background: lightsalmon;
+    cursor: pointer;
+    transition: font-size 300ms;
+}
+
+#arrow-up:hover {
+    font-size: 1.2em;
+}
+
+
 
 .line {
     margin: auto 15em ;
@@ -233,24 +281,34 @@ footer p > a {
     font-size:2rem;
     font-family: Rockwell;
     display: inline-block;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-left: 1em;
-    margin-bottom: 1em;
 }
 
 .img-coba {
     width: 60%;
     height:100%;
+    align-self: center;
+    justify-self: center;
 }
 
 .projects {
     margin: auto 5em;
+    margin-bottom:3em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    height: auto;
 }
-
 .projects:last-child p {
     text-align: justify;
+}
+
+.btn-for-small {
+    opacity: 0;
+}
+
+.btn-for-large {
+    opacity: 1;
 }
 
 .tools-used > li{
@@ -300,20 +358,31 @@ footer p > a {
         left: 3%;
     } */
 
+    .btn-for-small {
+        opacity: 1;
+        text-align: center;
+    }
+    
+    .btn-for-large {
+        opacity: 0;
+    }
+    
+
     .second-page__image--ivan {
-        top: 55%;
+        top: 50%;
     }
 
     .img-ivan {
-        width: 200px;
-        height: 200px;
+        width: 140px;
+        height: 240px;
     }
+
+    /* .img-coba {
+        height: 140px;
+    } */
 
     .skills-container {
         margin: auto 0;
-        display: grid;
-        grid-template-columns: repeat(3, 31vw);
-        border:2px solid #A58BAA;
     }
 
     .skills-container > div > h2 {
@@ -361,7 +430,7 @@ footer p > a {
     }
 
     .second-page__image--ivan {
-        top: 65%;
+        top: 75%;
     }
     
 }
