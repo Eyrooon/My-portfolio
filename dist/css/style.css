@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Roboto+Slab|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Krub|Open+Sans+Condensed:300|Raleway|Roboto+Slab|Source+Sans+Pro');
 
 *, *::after, *::after, body {
     padding:0;
@@ -12,6 +12,36 @@ body {
     line-height: 1.6em;
 }
 
+footer {
+    background: rgb(71, 70, 70);
+    height: 120px;
+    color:white;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'Krub', sans-serif;
+    display: inline-block;
+    margin-left:1em;
+    margin-top: 1em;
+}
+
+footer p {
+    margin-top:.2em;
+    margin-left:2em;
+}
+
+footer p > a {
+    color: whitesmoke;
+}
+
+
+.line {
+    margin: auto 15em ;
+    padding:.1rem;
+    width: 1000px;
+    background:red;
+}
 .title {
     position: relative;
 }
@@ -27,9 +57,9 @@ body {
 }
 
 .img-ivan {
-    width: 200px;
-    height: 200px;
-}
+    width: 290px;
+    height: 290px;
+}   
 
 .img-devices {
     width:450px;
@@ -87,7 +117,7 @@ body {
 
 .second-page__image--ivan {
     position:absolute;
-    top: 45%;
+    top: 39%;
     left:calc(100vw - 58vw);
     z-index: 2;
 }
@@ -271,13 +301,12 @@ body {
     } */
 
     .second-page__image--ivan {
-        top: 60%;
-        right:10%;
+        top: 55%;
     }
 
     .img-ivan {
-        width: 130px;
-        height: 130px;
+        width: 200px;
+        height: 200px;
     }
 
     /* .img-devices {
@@ -306,6 +335,17 @@ body {
     .projects:last-child p {
         text-align: left;
 
+    }
+    .skills-container > div  {
+        height: 150px;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+
+    footer h3 {
+        font-size: .9rem;
     }
 }
 
