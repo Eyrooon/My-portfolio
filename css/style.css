@@ -12,6 +12,15 @@ body {
     line-height: 1.6em;
 }
 
+hr {
+    position: relative;
+    padding: .1rem;
+    margin: auto 5em;
+    border-radius: 50px;
+    background: rgb(255, 140, 140);
+    border: none;
+}
+
 footer {
     background: rgb(71, 70, 70);
     height: 120px;
@@ -216,23 +225,23 @@ h1.text__center {
 
 .third-page::after,
 .third-page::before {
-  position: absolute; 
-  content: '';
-  width: 70px;
-  height: 70px;
-  background:#FF7272;;
-  top: -2.8em;
-  z-index: 100;
+    position: absolute; 
+    content: '';
+    width: 70px;
+    height: 70px;
+    background:#FF7272;;
+    top: -2.8em;
+    z-index: 100;
 }
 
 .third-page::before {
-  right: 50%;
-  transform: skew(0, 20deg)
+    right: 50%;
+    transform: skew(0, 20deg)
 }
 
 .third-page::after {
-  left: 50%;
-  transform: skew(0, -20deg)
+    left: 50%;
+    transform: skew(0, -20deg)
 }
 
 .third-page h1 {
@@ -252,17 +261,54 @@ h1.text__center {
     border:2px solid #A58BAA;
 }
 
-.skills-container > div  {
+.skills-container__item  {
     height: 250px;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     align-content: center;
-    /* display: inline-block;
-    height: 200px;
-    width: 200px;
-    text-align: left; */
 }
+
+.skills-container__item::after, .skills-container__item::before {
+    content:'';
+    position: absolute;
+    bottom:2.25em;
+    top:1.25em;
+    left:1.25em;
+    right: 2.25em;
+    z-index: 5000;
+    transition: transform 350ms ease-in-out;
+}
+
+.skills-container__item::after {
+    /* border-top: 2px solid red; */
+    border-bottom: 2px solid red;
+    transform: scale(0,1);
+}
+
+.skills-container__item::before {
+    /* border-right: 2px solid red; */
+    /* border-left: 2px solid red; */
+    transform: scale(1,0);
+}
+
+.skills-container__item:hover.skills-container__item::after {
+    transform: scale(1, 1);
+}
+
+.skills-container__item:hover.skills-container__item::before {
+    transform: scale(1, 1);
+}
+
+.skills-container__item> h2 {
+    transition: font-size 500ms ease;
+}
+
+.skills-container__item:hover.skills-container__item > h2 {
+    font-size: 3rem;
+}
+
 
 .skills-container > div:nth-child(odd) {
     background: #9F808E;
@@ -295,7 +341,7 @@ h1.text__center {
     margin-left: 1em;
 }
 
-.img-coba {
+.img {
     width: 60%;
     height:100%;
     align-self: center;
@@ -345,28 +391,8 @@ h1.text__center {
     }
 }
 
-@media only screen and (max-width:600px) {
-    /* .second-page {
-        height: 1000px;
-    }
-
-    .img-devices {
-        width:300px;
-        height: 300px;;
-    }
-
-    .second-page__image--devices {
-        bottom: -80%;
-        right: 20%;
-    }
-     */
-}
 
 @media only screen and (max-width:480px) {
-    /* .second-page__image--devices {
-        bottom: -93%;
-        left: 3%;
-    } */
 
     .btn-for-small {
         opacity: 1;
@@ -387,9 +413,6 @@ h1.text__center {
         height: 140px;
     }
 
-    /* .img-coba {
-        height: 140px;
-    } */
 
     .skills-container {
         margin: auto 0;
@@ -398,6 +421,11 @@ h1.text__center {
     .skills-container > div > h2 {
         font-size: 1em;
     }
+
+    .skills-container__item:hover.skills-container__item > h2 {
+        font-size: 1.5rem;
+    }
+    
 
 
     .projects {
