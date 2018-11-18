@@ -306,7 +306,7 @@ h1.text__center {
 }
 
 .skills-container__item:hover.skills-container__item > h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -372,6 +372,35 @@ h1.text__center {
     list-style-type: none;
 }
 
+.fadeIn {
+    animation: fadeIn 350ms ease-in-out;
+}
+
+.fadeOut {
+    animation: fadeOut 350ms ease-in-out;
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+
+/* MEDIA */
+
 @media only screen and (max-width:1400px) {
     .first-page__description {
         margin: 3em 400px;
@@ -405,7 +434,7 @@ h1.text__center {
     
 
     .second-page__image--ivan {
-        top: 54%;
+        top: -1.25em;
     }
 
     .img-ivan {
@@ -423,7 +452,7 @@ h1.text__center {
     }
 
     .skills-container__item:hover.skills-container__item > h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
 
@@ -458,6 +487,7 @@ h1.text__center {
         margin: 3em 50px;
     }
     .second-page__image--ivan {
+        top: -1.25em;
         left:calc(100vw - 68vw);
     }
 }
